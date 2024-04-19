@@ -1,12 +1,12 @@
 create database if not exists hospital;
-use hospital
+use hospital;
 
 create table if not exists pacientes(
-cpf-paciente varchar15) primary key,
+cpf_paciente varchar(15) primary key,
 nome varchar(45) not null,
 data_nasc date not null,
-telefone varchar(45) not null
-e-mail varchar(45));
+telefone varchar(45) not null,
+email varchar(45));
 
 create table if not exists departamentos(
 cod_especialidade int primary key,
